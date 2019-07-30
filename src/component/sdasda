@@ -1,0 +1,35 @@
+
+
+// Таблица
+<span onClick={this.onClickDel.bind(this)} >Удалить </span>
+
+=>
+
+onClickDel(event) {
+//    console.log(event);
+    this.props.onDel(this.state.number)
+    
+}
+
+
+state = {
+        ...this.props.One
+}
+
+
+// Menu 
+
+ del(idToRemove){
+
+
+               console.log(idToRemove)
+            const filtered = this.state.result.filter((item) => item.number !== idToRemove);
+            console.log(filtered);
+            this.setState({result: filtered});
+
+            }
+=>
+             state = {
+            result: testArray,
+                        
+ }
